@@ -1,6 +1,7 @@
 # Yuna ComfyUI Impact baked image.
-# Contains custom nodes/dependencies only. No tokens, no Yuna LoRA, no FLUX checkpoint.
-FROM runpod/worker-comfyui:5.8.5-base
+# Contains ComfyUI FLUX fp8 base + custom nodes/dependencies.
+# No tokens, no Yuna LoRA, no private references.
+FROM runpod/worker-comfyui:5.8.5-flux1-dev-fp8
 
 ENV COMFYUI_PATH=/comfyui
 ENV COMFYUI_MODEL_PATH=/comfyui/models
