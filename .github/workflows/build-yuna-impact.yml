@@ -8,8 +8,7 @@ permissions:
   packages: write
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/yuna-comfyui-impact
-
+  IMAGE_NAME: ghcr.io/adammamuti500/yuna-comfyui-impact
 jobs:
   build:
     runs-on: ubuntu-latest
